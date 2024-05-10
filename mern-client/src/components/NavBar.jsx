@@ -45,34 +45,34 @@ const Navbar = () => {
                     {/* logo */}
                     <Link to='/' className='text-2xl font-bold text-blue-700 flex items-center gap-2'><FaBlog className='inline-block'/>BookVerse</Link>
                     {/* nav items for large devices */}
-                    <ul className='md:flex  space-x-12 hidden mx-auto'>
+                    {/* <ul className='md:flex  space-x-12 hidden mx-auto'>
                         {
                             navItems.map(({link,path})=><Link key={path} to ={path} className='block text-base
                              text-black uppercase cursor-pointer hover:text-blue-700'>{link}</Link>)
                         }
                     </ul>
                     {/* btn for lg devices */}
-                    <div className='space-x-12 hidden lg:flex items-center'>
+                    {/* <div className='space-x-12 hidden lg:flex items-center'>
                         <button><FaBarsStaggered className='w-5 hover:text-blue-700 md:hidden'/></button>
                         {
                             // user ? user.email:""
                         }
-                    </div>
+                    </div> */}
                     {/* menu button for mobile devices */}
-                    <div className='md:hidden'>
+                    {/* <div className='md:hidden'>
                         <button onClick={toggleMenu} className='text-black foucus:outline-none'>
                             {
                                 isMenuOpen ? <FaXmark className='h-5 w-5 text-black'/>:<FaBarsStaggered className='h-5 w-5 text-black'/>
                             }
                         </button>
-                    </div>
+                    </div> */}
                     {/* navigation for sm devices */}
-                    <div className={`space-y-4 px-4 mt-16 py-7 bg-blue-700 ${isMenuOpen?"block fixed top-0 right-0 left-0":"hidden"}`}>
+                    {/* <div className={`space-y-4 px-4 mt-16 py-7 bg-blue-700 ${isMenuOpen?"block fixed top-0 right-0 left-0":"hidden"}`}>
                         {
                             navItems.map(({link,path})=><Link key={path} to ={path} className='block text-base
                             text-white uppercase cursor-pointer'>{link}</Link>)
                         }
-                    </div>
+                    </div> */} 
                 </div>
             </nav>
         </header>
