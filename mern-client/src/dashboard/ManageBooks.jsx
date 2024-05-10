@@ -4,14 +4,14 @@ import {Link} from "react-router-dom";
 const ManageBooks = () => {
   const [allBooks,setAllBooks]=useState([])
   useEffect(()=>{
-    fetch("http://localhost:5000/all-books").then(res=>res.json()).then(data=>setAllBooks(data));
+    fetch("https://bookverse-1.onrender.com/all-books").then(res=>res.json()).then(data=>setAllBooks(data));
   },[])
   //to delete a book
   const handleDelete=(id)=>{
-    fetch(`http://localhost:5000/book/${id}`,{
+    fetch(`https://bookverse-1.onrender.com/book/${id}`,{
       method:"DELETE"
     }).then(res=>res.json()).then(data=>{
-      fetch("http://localhost:5000/all-books").then(res=>res.json()).then(data=>setAllBooks(data));
+      fetch("https://bookverse-1.onrender.com/all-books").then(res=>res.json()).then(data=>setAllBooks(data));
     })
   }
   return (
@@ -24,7 +24,7 @@ const ManageBooks = () => {
           <Table.HeadCell>Book Name</Table.HeadCell>
           <Table.HeadCell>Author Name</Table.HeadCell>
           <Table.HeadCell>Category</Table.HeadCell>
-          <Table.HeadCell>Price</Table.HeadCell>
+          {/* <Table.HeadCell>Price</Table.HeadCell> */}
           <Table.HeadCell>
             <span>Edit and Manage</span>
           </Table.HeadCell>
@@ -67,9 +67,9 @@ const ManageBooks = () => {
                   <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                     {item.category}
                   </Table.Cell>
-                  <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
+                  {/* <Table.Cell className="whitespace-nowrap font-medium text-gray-900 dark:text-white">
                     $10
-                  </Table.Cell>
+                  </Table.Cell> */}
                   <Table.Cell>
                     <Link className="font-medium text-cyan-600 hover:underline dark:text-cyan-500 mr-5"
                     to={`/admin/dashboard/edit-books/${item._id}`}>

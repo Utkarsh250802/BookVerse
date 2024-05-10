@@ -8,7 +8,7 @@ const Banner = () => {
    const navigate=useNavigate();
 
    const findAllBook=async()=>{
-    const response=await fetch('http://localhost:5000/all-books',{
+    const response=await fetch('https://bookverse-1.onrender.com/all-books',{
       method:'GET',
     })
 
