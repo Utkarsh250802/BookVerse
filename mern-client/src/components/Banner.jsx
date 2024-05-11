@@ -44,7 +44,7 @@ const Banner = () => {
         <div className='flex w-full flex-col md:flex-row justify-between items-center gap-12 py-40'>
             {/* left side */}
             <div className='md:w-1/2 space-y-8 h-full'>
-                <h2 className='text-5xl font-bold leading-snug text-black'>Ultimat Destination for
+                <h2 className='text-5xl font-bold leading-snug text-black'>Ultimate Destination for
                 <span className='text-blue-700'> Book Lovers</span>
                 </h2>
                 <p className='md:w-4/5'>Dive into a World of Stories. Explore. Discover. Connect. Join us to unlock a world of stories and share your passion for reading with a vibrant community.
